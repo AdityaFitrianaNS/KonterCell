@@ -1,0 +1,56 @@
+.judul {
+   margin-top: 6rem;
+}
+.img-fluid {
+   width: 93%;
+}
+p {
+   font-size: 20px;
+}
+
+@media (max-width: 1440px) {
+   p {
+      font-size: 18px;
+   }
+   .img-fluid {
+      width: 100%;
+   }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+   .img-fluid {
+      margin-top: -2rem;
+      margin-left: 125px;
+      margin-bottom: 1rem;
+      width: 50%;
+   }
+}
+
+@media (max-width: 767px) {
+   .judul {
+      margin-top: 1rem;
+   }
+   .sub-judul {
+      font-size: 28px;
+   }
+   p {
+      font-size: 18px;
+   }
+   .img-fluid {
+      margin-top: -2rem;
+      margin-bottom: 1rem;
+      width: 80%;
+   }
+}
+
+@media (max-width: 320px) {
+   .judul {
+      font-size: 26px;
+   }
+   .sub-judul {
+      font-size: 24px;
+   }
+   p {
+      font-size: 14px;
+   }
+}
