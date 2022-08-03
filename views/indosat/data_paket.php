@@ -53,7 +53,7 @@ if (isset($_POST["cari"])) {
 <body>
     <!-- Navbar (Navigasi Bar) -->
     <nav class="shadow">
-        <a href="#" class="logo">KonterCell</a>
+        <a href="../home" class="logo">KonterCell</a>
         <div class="bi bi-list" id="menu-icon"></div>
         <ul class="navbar">
             <li><a href="../home">Home</a></li>
@@ -69,7 +69,7 @@ if (isset($_POST["cari"])) {
         </ul>
         <!-- Logout -->
         <div class="logout">
-            <a href="#">
+            <a href="../admin/logout.php">
                 <i class="bi-person-circle"></i> Hai, User
             </a>
         </div>
