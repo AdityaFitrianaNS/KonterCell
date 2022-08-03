@@ -40,8 +40,9 @@ Jika dari github :
 - Masuk ke repositori github
 - Pilih button `code`
 - Pada dropdown, pilih `download zip`
-- Setelah terdownload, extract file kedalam folder `htdocs`
-- Setelah di extract, buat database pada phpmyadmin, dengan nama **db_konter_cell**
+- Setelah terdownload, extract file kedalam folder `htdocs` (sesuaikan dengan lokasi di device)
+- Setelah di extract, ubah nama folder `KonterCell-main` menjadi `KonterCell`
+- Buat database pada localhost di phpmyadmin, dengan nama **db_konter_cell**
 - Masuk ke database **db_konter_cell**
 - Pada bagian atas ada `import`, klik import
 - Pada form upload file, `import` file sql yaitu **db_konter_cell** yang ada pada hasil extract di `htdocs`
