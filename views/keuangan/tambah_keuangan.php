@@ -2,6 +2,12 @@
 
 session_start();
 
+// Jika tidak ada login, kembalikan kehalaman login
+if (!isset($_SESSION["login"])) {
+    header("Location: ../admin/login");
+    exit;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +32,7 @@ session_start();
 <body>
    <!-- Navbar (Navigasi Bar) -->
    <nav class="shadow">
-      <a href="#" class="logo">KonterCell</a>
+      <a href="../home" class="logo">KonterCell</a>
       <div class="bi bi-list" id="menu-icon"></div>
       <ul class="navbar">
          <li><a href="../../index.php">Home</a></li>
@@ -42,7 +48,7 @@ session_start();
       </ul>
       <!-- Logout -->
       <div class="logout">
-         <a href="#">
+         <a href="../admin/logout.php">
             <i class="bi-person-circle"></i> Hai, User
          </a>
       </div>

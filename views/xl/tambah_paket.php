@@ -1,3 +1,15 @@
+<?php
+
+session_start();
+
+// Jika tidak ada login, kembalikan kehalaman login
+if (!isset($_SESSION["login"])) {
+    header("Location: ../admin/login");
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +34,7 @@
 <body>
    <!-- Navbar (Navigasi Bar) -->
    <nav class="shadow">
-      <a href="#" class="logo">KonterCell</a>
+      <a href="../home.php" class="logo">KonterCell</a>
       <div class="bi bi-list" id="menu-icon"></div>
       <ul class="navbar">
          <li><a href="../../index.php">Home</a></li>
@@ -38,7 +50,7 @@
       </ul>
       <!-- Logout -->
       <div class="logout">
-         <a href="#">
+         <a href="../admin/logout.php">
             <i class="bi-person-circle"></i> Hai, User
          </a>
       </div>
@@ -51,7 +63,7 @@
          <form action="../../controllers/xl/proses_tambah" method="post">
             <h4 class="mb-4 mt-4 text-center ">Form Tambah Paket XL</h4>
             <div class="row ms-5 me-0">
-               <label for="nama_paket" class="form-label">Nama Paket</label>
+               <label for="nama_paket" class="col-sm-5 col-form-label">Nama Paket</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -80,7 +92,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="jenis_paket" class="col-sm-3 col-form-label">Jenis Paket</label>
+               <label for="jenis_paket" class="col-sm-5 col-form-label">Jenis Paket</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -96,7 +108,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="masa_aktif" class="col-sm-3 col-form-label">Masa Aktif</label>
+               <label for="masa_aktif" class="col-sm-5 col-form-label">Masa Aktif</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -115,7 +127,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="harga_asli" class="col-sm-3 col-form-label">Harga Asli</label>
+               <label for="harga_asli" class="col-sm-5 col-form-label">Harga Asli</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -128,7 +140,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0 mb-3">
-               <label for="harga_jual" class="col-sm-3 col-form-label">Harga Jual</label>
+               <label for="harga_jual" class="col-sm-5 col-form-label">Harga Jual</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">

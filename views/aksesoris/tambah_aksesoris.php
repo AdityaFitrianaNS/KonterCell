@@ -33,7 +33,7 @@ if (!isset($_SESSION["login"])) {
 <body>
    <!-- Navbar (Navigasi Bar) -->
    <nav class="shadow">
-      <a href="#" class="logo">KonterCell</a>
+      <a href="../home.php" class="logo">KonterCell</a>
       <div class="bi bi-list" id="menu-icon"></div>
       <ul class="navbar">
          <li><a href="../../index.php">Home</a></li>
@@ -49,7 +49,7 @@ if (!isset($_SESSION["login"])) {
       </ul>
       <!-- Logout -->
       <div class="logout">
-         <a href="#">
+         <a href="../admin/logout.php">
             <i class="bi-person-circle"></i> Hai, User
          </a>
       </div>

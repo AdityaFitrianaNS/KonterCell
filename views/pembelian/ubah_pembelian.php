@@ -1,5 +1,13 @@
 <?php
 
+session_start();
+
+// Jika tidak ada login, kembalikan kehalaman login
+if (!isset($_SESSION["login"])) {
+    header("Location: ../admin/login");
+    exit;
+}
+
 // require untuk menyertakan/memanggil file php lain ke dalam program/source code ubah_pembelian.php
 require "../../controllers/koneksi.php";
 require "../../controllers/fungsi_query.php";
@@ -33,7 +41,7 @@ $data = query("SELECT * FROM tb_pembelian WHERE id_pembelian = $id_pembelian")[0
 <body>
    <!-- Navbar (Navigasi Bar) -->
    <nav class="shadow">
-      <a href="#" class="logo">KonterCell</a>
+      <a href="../home" class="logo">KonterCell</a>
       <div class="bx bx-menu" id="menu-icon"></div>
       <ul class="navbar">
          <li><a href="../../index.php">Home</a></li>
@@ -49,7 +57,7 @@ $data = query("SELECT * FROM tb_pembelian WHERE id_pembelian = $id_pembelian")[0
       </ul>
       <!-- Logout -->
       <div class="logout">
-         <a href="#">
+         <a href="../admin/logout.php">
             <i class="bi-person-circle"></i> Hai, User
          </a>
       </div>
@@ -62,7 +70,7 @@ $data = query("SELECT * FROM tb_pembelian WHERE id_pembelian = $id_pembelian")[0
          <form action="../../controllers/pembelian/proses_ubah" method="post" id="pembelian">
             <h4 class="mb-4 mt-4 text-center">Form Ubah Pembeli</h4>
             <div class="row ms-5 me-0">
-               <label for="nama_pembelian" class="form-label">Nama Pembelian</label>
+               <label for="nama_pembelian" class="col-sm-5 col-form-label">Nama Pembelian</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -89,7 +97,7 @@ $data = query("SELECT * FROM tb_pembelian WHERE id_pembelian = $id_pembelian")[0
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="diskon" class="col-sm-3 col-form-label">Diskon</label>
+               <label for="diskon" class="col-sm-5 col-form-label">Diskon</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -102,7 +110,7 @@ $data = query("SELECT * FROM tb_pembelian WHERE id_pembelian = $id_pembelian")[0
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="uang_bayar" class="col-sm-3 col-form-label">Uang Bayar</label>
+               <label for="uang_bayar" class="col-sm-5 col-form-label">Uang Bayar</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">

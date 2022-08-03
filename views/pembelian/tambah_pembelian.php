@@ -1,3 +1,15 @@
+<?php
+
+session_start();
+
+// Jika tidak ada login, kembalikan kehalaman login
+if (!isset($_SESSION["login"])) {
+    header("Location: ../admin/login");
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +32,7 @@
 <body>
    <!-- Navbar (Navigasi Bar) -->
    <nav class="shadow">
-      <a href="#" class="logo">KonterCell</a>
+      <a href="../home" class="logo">KonterCell</a>
       <div class="bi bi-list" id="menu-icon"></div>
       <ul class="navbar">
          <li><a href="../../index.php">Home</a></li>
@@ -36,7 +48,7 @@
       </ul>
       <!-- Logout -->
       <div class="logout">
-         <a href="#">
+         <a href="../admin/logout.php">
             <i class="bi-person-circle"></i> Hai, User
          </a>
       </div>
@@ -49,7 +61,7 @@
          <form action="../../controllers/pembelian/proses_tambah" method="post" id="pembelian">
             <h4 class="mb-4 mt-4 text-center">Form Tambah Pembelian</h4>
             <div class="row ms-5 me-0">
-               <label for="nama_pembelian" class="form-label">Nama Pembelian</label>
+               <label for="nama_pembelian" class="col-sm-5 col-form-label">Nama Pembelian</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -75,7 +87,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="diskon" class="col-sm-3 col-form-label">Diskon</label>
+               <label for="diskon" class="col-sm-5 col-form-label">Diskon</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -88,7 +100,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="uang_bayar" class="col-sm-3 col-form-label">Uang Bayar</label>
+               <label for="uang_bayar" class="col-sm-5 col-form-label">Uang Bayar</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">

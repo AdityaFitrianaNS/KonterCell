@@ -53,7 +53,7 @@ if (isset($_POST["cari"])) {
 <body>
     <!-- Navbar (Navigasi Bar) -->
     <nav class="shadow">
-        <a href="#" class="logo">KonterCell</a>
+        <a href="../home.php" class="logo">KonterCell</a>
         <div class="bi bi-list" id="menu-icon"></div>
         <ul class="navbar">
             <li><a href="../home">Home</a></li>

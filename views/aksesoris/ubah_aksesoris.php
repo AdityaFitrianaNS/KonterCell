@@ -43,7 +43,7 @@ $data = query("SELECT * FROM tb_aksesoris WHERE id_aksesoris = $id_aksesoris")[0
 <body>
    <!-- Navbar (Navigasi Bar) -->
    <nav class="shadow">
-      <a href="#" class="logo">KonterCell</a>
+      <a href="../home.php" class="logo">KonterCell</a>
       <div class="bx bx-menu" id="menu-icon"></div>
       <ul class="navbar">
          <li><a href="../../index.php">Home</a></li>
@@ -59,7 +59,7 @@ $data = query("SELECT * FROM tb_aksesoris WHERE id_aksesoris = $id_aksesoris")[0
       </ul>
       <!-- Logout -->
       <div class="logout">
-         <a href="#">
+         <a href="../admin/logout.php">
             <i class="bi-person-circle"></i> Hai, User
          </a>
       </div>
