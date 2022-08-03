@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +50,7 @@
    
    <!-- Container -->
    <div class="container-lg">
-      <div class="card" style="height: 500px;">
+      <div class="card" style="height: 565px;">
          <!-- Form tambah -->
          <form action="../../controllers/keuangan/proses_tambah" method="post" id="keuangan">
             <h4 class="mb-4 mt-4 text-center">Form Tambah Keuangan</h4>
@@ -56,11 +62,7 @@
                         <i class="bi bi-card-checklist"></i>
                      </span>
                      <!-- input nama pengisi -->
-                     <select class="form-select" name="nama_pengisi" required>
-                        <option selected disabled>Pilih nama pengisi</option>
-                        <option value="Adit">Adit</option>
-                        <option value="Amir">Amir</option>
-                     </select>
+                     <input type="text" class="form-control" name="nama_pengisi" value="<?= $_SESSION['username']; ?>" readonly required>
                   </div>
                </div>
             </div>

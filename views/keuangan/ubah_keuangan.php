@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 // require untuk menyertakan/memanggil file php lain ke dalam program/source code ubah_keuangan.php
 require "../../controllers/koneksi.php";
 require "../../controllers/fungsi_query.php";
@@ -56,7 +58,7 @@ $data = query("SELECT * FROM tb_keuangan WHERE id_keuangan = $id_keuangan")[0];
    
    <!-- Container -->
    <div class="container-lg">
-      <div class="card" style="height: 475px;">
+      <div class="card" style="height: 565px;">
          <!-- Form ubah -->
          <form action="../../controllers/keuangan/proses_ubah" method="post" id="keuangan">
             <h4 class="mb-4 mt-4 text-center">Form Ubah Keuangan</h4>
@@ -69,12 +71,7 @@ $data = query("SELECT * FROM tb_keuangan WHERE id_keuangan = $id_keuangan")[0];
                      </span>
                      <input type="hidden" name="id_keuangan" value="<?= $data['id_keuangan']; ?>">
                      <!-- input nama pengisi -->
-                     <select class="form-select" name="nama_pengisi" required>
-                        <option value="<?= $data['nama_pengisi']; ?>" selected><?= $data['nama_pengisi']; ?></option>
-                        <option disabled>Pilih nama pengisi</option>
-                        <option value="Adit">Adit</option>
-                        <option value="Amir">Amir</option>
-                     </select>
+                     <input type="text" class="form-control" name="nama_pengisi" value="<?= $_SESSION['username']; ?>" readonly required>
                   </div>
                </div>
             </div>

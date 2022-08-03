@@ -1,5 +1,13 @@
 <?php
 
+session_start();
+
+// Jika tidak ada login, kembalikan kehalaman login
+if (!isset($_SESSION["login"])) {
+    header("Location: ../admin/login");
+    exit;
+}
+
 // require untuk menyertakan/memanggil file php lain ke dalam program/source code ubah_aksesoris.php
 require "../../controllers/koneksi.php";
 require "../../controllers/fungsi_query.php";
@@ -64,7 +72,7 @@ $data = query("SELECT * FROM tb_aksesoris WHERE id_aksesoris = $id_aksesoris")[0
          <form action="../../controllers/aksesoris/proses_ubah.php" method="post">
             <h4 class="mb-4 mt-4 text-center ">Form Ubah Aksesoris HP</h4>
             <div class="row ms-5 me-0">
-               <label for="nama_aksesoris" class="form-label">Nama Paket</label>
+               <label for="nama_aksesoris" class="col-sm-5 col-form-label">Nama Paket</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -103,7 +111,7 @@ $data = query("SELECT * FROM tb_aksesoris WHERE id_aksesoris = $id_aksesoris")[0
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="stok" class="col-sm-3 col-form-label">Stok</label>
+               <label for="stok" class="col-sm-5 col-form-label">Stok</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -116,7 +124,7 @@ $data = query("SELECT * FROM tb_aksesoris WHERE id_aksesoris = $id_aksesoris")[0
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="harga_asli" class="col-sm-3 col-form-label">Harga Asli</label>
+               <label for="harga_asli" class="col-sm-5 col-form-label">Harga Asli</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -129,7 +137,7 @@ $data = query("SELECT * FROM tb_aksesoris WHERE id_aksesoris = $id_aksesoris")[0
                </div>
             </div>
             <div class="row ms-5 me-0 mb-3">
-               <label for="harga_jual" class="col-sm-3 col-form-label">Harga Jual</label>
+               <label for="harga_jual" class="col-sm-5 col-form-label">Harga Jual</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">

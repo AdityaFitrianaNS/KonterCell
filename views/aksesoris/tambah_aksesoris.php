@@ -1,3 +1,14 @@
+<?php 
+
+session_start();
+
+// Jika tidak ada login, kembalikan kehalaman login
+if (!isset($_SESSION["login"])) {
+    header("Location: ../admin/login");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,7 +62,7 @@
          <form action="../../controllers/aksesoris/proses_tambah" method="post">
             <h4 class="mb-4 mt-4 text-center">Form Tambah Aksesoris HP</h4>
             <div class="row ms-5 me-0">
-               <label for="nama_aksesoris" class="form-label">Nama Aksesoris</label>
+               <label for="nama_aksesoris" class="col-sm-5 col-form-label">Nama Aksesoris</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -86,7 +97,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="stok" class="col-sm-3 col-form-label">Stok</label>
+               <label for="stok" class="col-sm-6 col-form-label">Stok</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -99,7 +110,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="harga_asli" class="col-sm-3 col-form-label">Harga Asli</label>
+               <label for="harga_asli" class="col-sm-6 col-form-label">Harga Asli</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -112,7 +123,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0 mb-3">
-               <label for="harga_jual" class="col-sm-3 col-form-label">Harga Jual</label>
+               <label for="harga_jual" class="col-sm-6 col-form-label">Harga Jual</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">

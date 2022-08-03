@@ -32,7 +32,7 @@ if (mysqli_fetch_assoc($ResultUsername)) {
 // Encrypt password
 $password = password_hash($password, PASSWORD_DEFAULT);
 
-$registrasi = "INSERT INTO admin_web VALUES('','$nama','$email','$username','$password')";
+$registrasi = "INSERT INTO admin_web VALUES('','$nama','$email','$username','$password', now())";
 mysqli_query($conn, $registrasi);
 
 ?>

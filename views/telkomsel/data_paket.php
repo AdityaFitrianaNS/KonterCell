@@ -62,7 +62,7 @@ if (isset($_POST["cari"])) {
         <!-- Logout -->
         <div class="logout">
             <a href="#">
-                <i class="bi-person-circle"></i> Hai, User
+                <i class="bi-person-circle"></i> sadasdasda
             </a>
         </div>
     </nav>

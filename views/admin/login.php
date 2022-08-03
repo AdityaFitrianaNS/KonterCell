@@ -14,14 +14,25 @@ if (isset($_POST["login"])) {
     if (mysqli_num_rows($result) == 1) {
         $row = mysqli_fetch_assoc($result);
         if (password_verify($password, $user['password'])) {
-            $_SESSION['nama'] = $user['nama'];
+            $_SESSION['username'] = $user['username'];
             $_SESSION["login"] = true;
-            echo "
+        ?>
+            <!-- Script SweetAlert2 -->
+            <script src="../../public/js/sweetalert2.all.min.js"></script>
+            <body style="font-family: poppins;"></body>
+            <!-- alert berhasil login-->
             <script>
-                alert('Berhasil login!');
-                document.location.href = 'registrasi.php';
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Berhasil!',
+                    text: 'Login berhasil sebagai admin!'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        document.location.href = '../home';
+                    }
+                })
             </script>
-            ";
+        <?php
             exit;
         }
     }
@@ -32,6 +43,7 @@ if (isset($_POST["login"])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,10 +59,11 @@ if (isset($_POST["login"])) {
     <!-- Tittle Page -->
     <title>Login KonterCell</title>
 </head>
+
 <body>
     <section>
         <div class="imgBx">
-            <img src="../../public/img/icon.png" alt="backgroundForm" class="" >
+            <img src="../../public/img/icon.png" alt="backgroundForm" class="">
         </div>
         <div class="contentBx">
             <div class="formBx">
@@ -87,4 +100,5 @@ if (isset($_POST["login"])) {
         </div>
     </section>
 </body>
+
 </html>

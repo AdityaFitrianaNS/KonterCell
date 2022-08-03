@@ -23,8 +23,8 @@ mysqli_query($conn, $query);
 
 ?>
 
-<!-- Script CDN Sweetalert 2 -->
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- Script SweetAlert2 -->
+<script src="../../public/js/sweetalert2.all.min.js"></script>
 <body style="font-family: poppins;"></body>
 
 <?php

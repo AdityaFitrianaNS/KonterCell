@@ -52,7 +52,7 @@ nav {
 }
 .logo {
   /* display: none; */
-  padding: 0px 175px 0px 0px;
+  padding: 0px 160px 0px 0px;
   font-size: 20px;
   font-weight: 600;
   color: var(--text-color);
@@ -65,7 +65,7 @@ nav {
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
-  padding: 20px 15px;
+  padding: 18px 15px;
   color: var(--text-color);
 }
 .navbar li {
@@ -76,7 +76,7 @@ nav {
   background: #20cbff;
 }
 .logout {
-  padding: 0px 0px 0px 175px;
+  padding: 0px 0px 0px 160px;
   font-weight: 500;
   text-align: right;
 }
@@ -84,7 +84,7 @@ nav {
   text-decoration: none;
   font-size: 20px;
   color: var(--text-color);
-  padding: 15px 14px;
+  padding: 17px 15px;
 }
 .logout a:hover {
   background: #20cbff;
@@ -103,32 +103,45 @@ nav {
 }
 @media (max-width: 1600px) {
   nav {
-    height: 50px;
+    height: 53px;
   }
   .logo {
-    font-size: 16px;
-    padding: 0px 175px 0px 0px;
+    font-size: 18px;
+    padding: 0px 120px 0px 0px;
   }
   .navbar a {
     padding: 15px 15px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .logout {
-    padding: 0px 0px 0px 175px;
+    padding: 0px 0px 0px 120px;
   }
   .logout a {
-    font-size: 16px;
+    font-size: 18px;
+    padding: 15px 15px;
   }
   .container-md {
     margin-top: 6rem;
   }
 }
 @media (max-width: 1440px) {
+  nav {
+    height: 50px;
+  }
+  .navbar a {
+    font-size: 16px;
+    padding: 15px 15px;
+  }
   .logo {
+    font-size: 16px;
     padding: 0px 85px 0px 0px;
   }
   .logout {
     padding: 0px 0px 0px 85px;
+  }
+  .logout a {
+    font-size: 16px;
+    padding: 14px 15px;
   }
   .judul {
     font-size: 30px;
@@ -179,7 +192,7 @@ nav {
     margin: 0px;
   }
   .navbar a {
-    padding: 15px 400px;
+    padding: 15px 300px;
     display: block;
     background: var(--bg-color);
   }

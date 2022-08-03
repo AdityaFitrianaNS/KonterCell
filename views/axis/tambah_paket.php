@@ -51,7 +51,7 @@
          <form action="../../controllers/axis/proses_tambah" method="post">
             <h4 class="mb-4 mt-4 text-center ">Form Tambah Paket Axis</h4>
             <div class="row ms-5 me-0">
-               <label for="nama_paket" class="form-label">Nama Paket</label>
+               <label for="nama_paket" class="col-sm-5 col-form-label">Nama Paket</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -80,7 +80,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="jenis_paket" class="col-sm-3 col-form-label">Jenis Paket</label>
+               <label for="jenis_paket" class="col-sm-5 col-form-label">Jenis Paket</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -96,7 +96,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="masa_aktif" class="col-sm-3 col-form-label">Masa Aktif</label>
+               <label for="masa_aktif" class="col-sm-5 col-form-label">Masa Aktif</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -115,7 +115,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0">
-               <label for="harga_asli" class="col-sm-3 col-form-label">Harga Asli</label>
+               <label for="harga_asli" class="col-sm-5 col-form-label">Harga Asli</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
@@ -128,7 +128,7 @@
                </div>
             </div>
             <div class="row ms-5 me-0 mb-3">
-               <label for="harga_jual" class="col-sm-3 col-form-label">Harga Jual</label>
+               <label for="harga_jual" class="col-sm-5 col-form-label">Harga Jual</label>
                <div class="col-md-10">
                   <div class="input-group input-group-merge">
                      <span class="input-group-text">
