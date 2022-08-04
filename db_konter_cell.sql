@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 03 Agu 2022 pada 07.39
+-- Waktu pembuatan: 04 Agu 2022 pada 09.24
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 8.1.6
 
@@ -20,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_konter_cell`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `admin_web`
+--
+
+CREATE TABLE `admin_web` (
+  `id_admin` int(10) NOT NULL,
+  `nama` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `username` varchar(10) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `tanggal_dibuat` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `admin_web`
+--
+
+INSERT INTO `admin_web` (`id_admin`, `nama`, `email`, `username`, `password`, `tanggal_dibuat`) VALUES
+(1, 'asd', 'ads@gmail.com', 'asd', '$2y$10$u6B8fCgBkH3.kcVK5roWPeCso8YUR2Fhd19501G1opGhIzCZdFLGO', '2022-08-03 18:39:00');
 
 -- --------------------------------------------------------
 
@@ -169,6 +191,12 @@ CREATE TABLE `tb_xl` (
 --
 
 --
+-- Indeks untuk tabel `admin_web`
+--
+ALTER TABLE `admin_web`
+  ADD PRIMARY KEY (`id_admin`);
+
+--
 -- Indeks untuk tabel `tb_aksesoris`
 --
 ALTER TABLE `tb_aksesoris`
@@ -225,6 +253,12 @@ ALTER TABLE `tb_xl`
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
+
+--
+-- AUTO_INCREMENT untuk tabel `admin_web`
+--
+ALTER TABLE `admin_web`
+  MODIFY `id_admin` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_aksesoris`

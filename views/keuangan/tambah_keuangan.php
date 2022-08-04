@@ -49,7 +49,7 @@ if (!isset($_SESSION["login"])) {
       <!-- Logout -->
       <div class="logout">
          <a href="../admin/logout.php">
-            <i class="bi-person-circle"></i> Hai, User
+            <i class="bi-person-circle"></i> <?= $_SESSION['username']; ?>
          </a>
       </div>
    </nav>
@@ -124,13 +124,13 @@ if (!isset($_SESSION["login"])) {
    </div>
    
    <!-- Script Bootstrap -->
-   <script src="../../public/js/bootstrap.js" type="module"></script>
+   <script src="../../public/js/library/bootstrap.js" type="module"></script>
    <!-- Script Navbar -->
    <script src="../../public/js/navbar.js"></script>
    <!-- Script limit input pada form-->
    <script src="../../public/js/limit_input.js"></script>
    <!-- Script CDN Jquery -->
-   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="../../public/js/library/jquery-3.6.0.min.js"></script>
    <!-- Script hitung otomatis -->
    <script src="../../public/js/hitung/pemasukan.js"></script>
 </body>

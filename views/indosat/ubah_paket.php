@@ -59,7 +59,7 @@ $data = query("SELECT * FROM tb_indosat WHERE id_indosat = $id_indosat")[0];
       <!-- Logout -->
       <div class="logout">
          <a href="../admin/logout.php">
-            <i class="bi-person-circle"></i> Hai, User
+            <i class="bi-person-circle"></i> <?= $_SESSION['username']; ?>
          </a>
       </div>
    </nav>
@@ -178,13 +178,13 @@ $data = query("SELECT * FROM tb_indosat WHERE id_indosat = $id_indosat")[0];
    </div>
    
    <!-- Script Bootstrap -->
-   <script src="../../public/js/bootstrap.js" type="module"></script>
+   <script src="../../public/js/library/bootstrap.js" type="module"></script>
    <!-- Script Navbar -->
    <script src="../../public/js/navbar.js"></script>
    <!-- Script limit input pada form-->
    <script src="../../public/js/limit_input.js"></script>
-   <!-- Script CDN Jquery -->
-   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <!-- Script Jquery -->
+   <script src="../../public/js/library/jquery-3.6.0.min.js"></script>
    <!-- CDN Select2 -->
    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
    <script>

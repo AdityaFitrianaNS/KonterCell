@@ -18,7 +18,7 @@ if (isset($_POST["login"])) {
             $_SESSION["login"] = true;
         ?>
             <!-- Script SweetAlert2 -->
-            <script src="../../public/js/sweetalert2.all.min.js"></script>
+            <script src="../../public/js/library/sweetalert2.all.min.js"></script>
             <body style="font-family: poppins;"></body>
             <!-- alert berhasil login-->
             <script>
@@ -43,7 +43,6 @@ if (isset($_POST["login"])) {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -100,5 +99,4 @@ if (isset($_POST["login"])) {
         </div>
     </section>
 </body>
-
 </html>

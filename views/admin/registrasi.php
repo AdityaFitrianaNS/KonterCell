@@ -21,7 +21,7 @@
       <div class="card" style="margin-top: -25px;">
          <!-- Form registrasi -->
          <form action="../../controllers/admin/proses_registrasi.php" method="post">
-            <h3 class="mb-4 mt-4 text-center">Form Registrasi Admin</h3>
+            <h3 class="mb-4 mt-3 text-center">Form Registrasi Admin</h3>
             <div class="row ms-5 me-0">
                <label for="nama" class="col-sm-5 col-form-label">Nama</label>
                <div class="col-md-10">
@@ -94,6 +94,6 @@
       </div>
    </div>
    <!-- Script Bootstrap -->
-   <script src="../../public/js/bootstrap.js" type="module"></script>
+   <script src="../../public/js/library/bootstrap.js" type="module"></script>
 </body>
 </html>

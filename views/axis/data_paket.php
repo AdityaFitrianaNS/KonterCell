@@ -70,14 +70,14 @@ if (isset($_POST["cari"])) {
         <!-- Logout -->
         <div class="logout">
             <a href="../admin/logout.php">
-                <i class="bi-person-circle"></i> Hai, User
+                <i class="bi-person-circle"></i> <?= $_SESSION['username']; ?>
             </a>
         </div>
     </nav>
 
     <!-- Container -->
     <div class="container-md">
-        <h2 class="judul" style="text-align: center;">Data Paket axis</h2>
+        <h2 class="judul" style="text-align: center;">Data Paket Axis</h2>
         <br>
         <!-- Form & button cari -->
         <div class="mt-4 offset-sm-0 col-sm-3">
@@ -169,13 +169,13 @@ if (isset($_POST["cari"])) {
     </div>
 
     <!-- Script Bootstrap -->
-    <script src="../../public/js/bootstrap.js" type="module"></script>
+    <script src="../../public/js/library/bootstrap.js" type="module"></script>
     <!-- Script Navbar -->
     <script src="../../public/js/navbar.js"></script>
     <!-- Script SweetAlert2 -->
-    <script src="../../public/js/sweetalert2.all.min.js"></script>
-    <!-- Script CDN Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../../public/js/library/sweetalert2.all.min.js"></script>
+    <!-- Script Jquery -->
+    <script src="../../public/js/library/jquery-3.6.0.min.js"></script>
     <!-- Script Jquery Hapus -->
     <script src="../../public/js/jquery_hapus.js"></script>
 </body>

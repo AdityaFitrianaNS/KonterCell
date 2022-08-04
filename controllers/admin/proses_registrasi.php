@@ -38,7 +38,7 @@ mysqli_query($conn, $registrasi);
 ?>
 
 <!-- Script CDN Sweetalert 2 -->
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../../public/js/library/sweetalert2.all.min.js"></script>
 <body style="font-family: poppins;"></body>
 
 <?php

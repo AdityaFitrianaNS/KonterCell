@@ -3,13 +3,16 @@
    <h1 align="center"> KonterCell </h1>
 </p>
 
+### Tujuan
 
-## Fitur
+Tujuan dibuatnya project ini sebagai latihan, dan menerapkan ke usaha milik orangtua.
+
+### Fitur
 
 - Login admin
-  - Belum tersedia
+  - Registrasi admin (jika dibutuhkan, jika tidak bisa dihapus)
   
-- Seluruh
+- Keseluruhan
   - Simpan
   - Baca
   - Perbarui
@@ -34,9 +37,12 @@
 - Sweetalert 2 (Library)
 - Select2
   
-## Cara Penggunaan lewat ZIP
-  
+### Cara penggunaan lewat ZIP
+
+Pastikan sudah terinstall Visual studio code, Xampp, dan PHP versi 8
+
 Jika dari github : 
+
 - Masuk ke repositori github
 - Pilih button `code`
 - Pada dropdown, pilih `download zip`
@@ -56,10 +62,13 @@ Jika dari github :
 - Tunggu hingga selesai
 - Jika muncul `node_modules` maka library berhasil dan website siap digunakan.
 
-## Kegunaan Folder
+### Kegunaan Folder
 - Folder public
   Menaruh file yang berkaitan styling/user interface seperti css dan javascript. beserta, resouce foto/gambar.
 - Folder controllers
   File fungsi yang menjalankan digunakan sebagai proses pengolahan data/pengiriman data seperti pada saat menggunakan method `POST` atau `GET`.
 - Folder views
   Folder yang digunakan untuk menampung file program yang berisikan desain antarmuka website. folder views untuk mempermudah pengelompokan desain antarmuka yang anda buat.
+
+### Date upload
+4 Agustus 2022

@@ -59,7 +59,7 @@ $data = query("SELECT * FROM tb_xl WHERE id_xl = $id_xl")[0];
       <!-- Logout -->
       <div class="logout">
          <a href="../admin/logout.php">
-            <i class="bi-person-circle"></i> Hai, User
+            <i class="bi-person-circle"></i> <?= $_SESSION['username']; ?>
          </a>
       </div>
    </nav>
@@ -82,22 +82,17 @@ $data = query("SELECT * FROM tb_xl WHERE id_xl = $id_xl")[0];
                      <!-- input nama paket internet -->
                      <select class="form-select" name="nama_paket" id="nama_paket" required >
                         <option selected value="<?= $data['nama_paket']; ?>"><?= $data['nama_paket']; ?></option>
-                        <option disabled>Paket Freedom</option>
-                        <option value="Freedom 1 GB">Freedom 1 GB</option>
-                        <option value="Freedom 2 GB">Freedom 2 GB</option>
-                        <option value="Freedom 2.5 GB">Freedom 2.5 GB</option>
-                        <option value="Freedom 3 GB">Freedom 3 GB</option>
-                        <option value="Freedom 4 GB">Freedom 4 GB</option>
-                        <option value="Freedom 5.5 GB">Freedom 5.5 GB</option>
-                        <option value="Freedom 7 GB">Freedom 7 GB</option>
-                        <option value="Freedom 9 GB">Freedom 9 GB</option>
-                        <option value="Freedom 16 GB">Freedom 16 GB</option>
-                        <option value="Freedom 25 GB">Freedom 25 GB</option>
-                        <option disabled>Paket Unlimited</option>
-                        <option value="Unlimited 5.5 GB">Unlimited 5.5 GB</option>
-                        <option value="Unlimited 10 GB">Unlimited 10 GB</option>
-                        <option value="Unlimited 20 GB">Unlimited 20 GB</option>
-                        <option value="Unlimited 35 GB">Unlimited 35 GB</option>
+                        <option disabled>Paket Internet</option>
+                        <option value="1 GB">1 GB</option>
+                        <option value="2 GB">2 GB</option>
+                        <option value="3 GB">3 GB</option>
+                        <option value="3.5 GB">3.5 GB</option>
+                        <option value="5 GB">5 GB</option>
+                        <option value="5.5 GB">5.5 GB</option>
+                        <option value="8 GB">8 GB</option>
+                        <option value="8.5 GB">8.5 GB</option>
+                        <option value="16 GB">16 GB</option>
+                        <option value="32 GB">32 GB</option>
                      </select>
                   </div>
                </div>
@@ -133,7 +128,7 @@ $data = query("SELECT * FROM tb_xl WHERE id_xl = $id_xl")[0];
                         <option value="3 Hari">3 Hari</option>
                         <option value="5 Hari">5 Hari</option>
                         <option value="7 Hari">7 Hari</option>
-                        <option value="14 Hari">14 Hari</option>
+                        <option value="15 Hari">15 Hari</option>
                         <option value="30 Hari">30 Hari</option>
                      </select>
                   </div>
@@ -177,13 +172,13 @@ $data = query("SELECT * FROM tb_xl WHERE id_xl = $id_xl")[0];
       </div>
    </div>
    <!-- Script Bootstrap -->
-   <script src="../../public/js/bootstrap.js" type="module"></script>
+   <script src="../../public/js/library/bootstrap.js" type="module"></script>
    <!-- Script Navbar -->
    <script src="../../public/js/navbar.js"></script>
    <!-- Script limit input pada form-->
    <script src="../../public/js/limit_input.js"></script>
-   <!-- Script CDN Jquery -->
-   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <!-- Script Jquery -->
+   <script src="../../public/js/library/jquery-3.6.0.min.js"></script>
    <!-- CDN Select2 -->
    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
    <script>

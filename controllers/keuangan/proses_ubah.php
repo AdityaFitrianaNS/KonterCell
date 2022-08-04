@@ -22,7 +22,7 @@ mysqli_query($conn, $query);
 ?>
 
 <!-- Script SweetAlert2 -->
-<script src="../../public/js/sweetalert2.all.min.js"></script>
+<script src="../../public/js/library/sweetalert2.all.min.js"></script>
 <body style="font-family: poppins;"></body>
 
 <?php

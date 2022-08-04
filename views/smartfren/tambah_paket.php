@@ -51,7 +51,7 @@ if (!isset($_SESSION["login"])) {
       <!-- Logout -->
       <div class="logout">
          <a href="../admin/logout.php">
-            <i class="bi-person-circle"></i> Hai, User
+            <i class="bi-person-circle"></i> <?= $_SESSION['username']; ?><?= $_SESSION['username']; ?>
          </a>
       </div>
    </nav>
@@ -72,21 +72,11 @@ if (!isset($_SESSION["login"])) {
                      <!-- input nama paket internet -->
                      <select class="form-select" name="nama_paket" id="nama_paket" required>
                         <option selected>Pilih nama paket</option>
-                        <option value="Freedom 1 GB">Freedom 1 GB</option>
-                        <option value="Freedom 2 GB">Freedom 2 GB</option>
-                        <option value="Freedom 2.5 GB">Freedom 2.5 GB</option>
-                        <option value="Freedom 3 GB">Freedom 3 GB</option>
-                        <option value="Freedom 4 GB">Freedom 4 GB</option>
-                        <option value="Freedom 5.5 GB">Freedom 5.5 GB</option>
-                        <option value="Freedom 7 GB">Freedom 7 GB</option>
-                        <option value="Freedom 9 GB">Freedom 9 GB</option>
-                        <option value="Freedom 16 GB">Freedom 16 GB</option>
-                        <option value="Freedom 25 GB">Freedom 25 GB</option>
-                        <option disabled>Paket Unlimited</option>
-                        <option value="Unlimited 5.5 GB">Unlimited 5.5 GB</option>
-                        <option value="Unlimited 10 GB">Unlimited 10 GB</option>
-                        <option value="Unlimited 20 GB">Unlimited 20 GB</option>
-                        <option value="Unlimited 35 GB">Unlimited 35 GB</option>
+                        <option value="4 GB">4 GB</option>
+                        <option value="7 GB">7 GB</option>
+                        <option value="14 GB">14 GB</option>
+                        <option value="24 GB">24 GB</option>
+                        <option value="30 GB">30 GB</option>
                      </select>
                   </div>
                </div>
@@ -165,13 +155,13 @@ if (!isset($_SESSION["login"])) {
    </div>
 
    <!-- Script Bootstrap -->
-   <script src="../../public/js/bootstrap.js" type="module"></script>
+   <script src="../../public/js/library/bootstrap.js" type="module"></script>
    <!-- Script Navbar -->
    <script src="../../public/js/navbar.js"></script>
    <!-- Script limit input pada form-->
    <script src="../../public/js/limit_input.js"></script>
-   <!-- Script CDN Jquery -->
-   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <!-- Script Jquery -->
+   <script src="../../public/js/library/jquery-3.6.0.min.js"></script>
    <!-- CDN Select2 -->
    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
    <script>

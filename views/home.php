@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+// Jika tidak ada login, kembalikan kehalaman login
+if (!isset($_SESSION["login"])) {
+    header("Location: ./admin/login");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,8 +47,8 @@
       </ul>
       <!-- Logout -->
       <div class="logout">
-         <a href="#">
-            <i class="bi-person-circle"></i> Hai, User
+         <a href="./admin/logout.php">
+            <i class="bi-person-circle"></i> <?= $_SESSION['username']; ?>
          </a>
       </div>
    </nav>
@@ -75,8 +86,8 @@
          </div>
       </div>
    </section>
-   <!-- Javascript Bootstrap -->
-   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <!-- Script Bootstrap -->
+   <script src="../../public/js/library/bootstrap.js" type="module"></script>
    <!-- Script navbar -->
    <script src="../public/js/navbar.js"></script>
 </body>
