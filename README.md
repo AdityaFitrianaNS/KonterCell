@@ -70,5 +70,5 @@ Jika dari github :
 - Folder views
   Folder yang digunakan untuk menampung file program yang berisikan desain antarmuka website. folder views untuk mempermudah pengelompokan desain antarmuka yang anda buat.
 
-### Date upload
+### Tanggal Upload
 4 Agustus 2022
