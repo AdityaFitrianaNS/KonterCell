@@ -3,9 +3,9 @@
    <h1 align="center"> KonterCell </h1>
 </p>
 
-### Tujuan
+### Deskripsi
 
-Tujuan dibuatnya project ini sebagai latihan, dan menerapkan ke usaha milik orangtua.
+Website yang digunakan untuk menambah, mengubah, menghapus, dan mencari data. Seperti, data penjualan, paket data internet, aksesoris, dan keuangan. Tujuan dibuat untuak usaha konter pulsa milik orang tua.
 
 ### Fitur
 
@@ -47,7 +47,7 @@ Jika dari github :
 - Pilih button `code`
 - Pada dropdown, pilih `download zip`
 - Setelah terdownload, extract file kedalam folder `htdocs` (sesuaikan dengan lokasi di device)
-- Setelah di extract, ubah nama folder `KonterCell-main` menjadi `KonterCell`
+- Setelah di extract, ubah nama folder `3. KonterCell-main` menjadi `KonterCell`
 - Buat database pada localhost di phpmyadmin, dengan nama **db_konter_cell**
 - Masuk ke database **db_konter_cell**
 - Pada bagian atas ada `import`, klik import
@@ -70,5 +70,5 @@ Jika dari github :
 - Folder views
   Folder yang digunakan untuk menampung file program yang berisikan desain antarmuka website. folder views untuk mempermudah pengelompokan desain antarmuka yang anda buat.
 
-### Tanggal Upload
+### Tanggal upload
 4 Agustus 2022
