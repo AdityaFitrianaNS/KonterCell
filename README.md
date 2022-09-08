@@ -3,11 +3,11 @@
    <h1 align="center"> KonterCell </h1>
 </p>
 
-### Deskripsi
+## Deskripsi
 
-Website yang digunakan untuk menambah, mengubah, menghapus, dan mencari data. Seperti, data penjualan, paket data internet, aksesoris, dan keuangan. Tujuan dibuat untuak usaha konter pulsa milik orang tua.
+Dibuatnya project ini sebagai latihan, dan menerapkan ke usaha milik orangtua walaupun masih dari local dan tidak di deploy kedalam hosting.
 
-### Fitur
+## Fitur
 
 - Login admin
   - Registrasi admin (jika dibutuhkan, jika tidak bisa dihapus)
@@ -26,7 +26,7 @@ Website yang digunakan untuk menambah, mengubah, menghapus, dan mencari data. Se
 - Seluruh Provider
   - Keuntungan terisi otomatis
 
-### Teknologi yang digunakan
+## Teknologi yang digunakan
 
 - HTML5
 - CSS3
@@ -37,14 +37,13 @@ Website yang digunakan untuk menambah, mengubah, menghapus, dan mencari data. Se
 - Sweetalert 2 (Library)
 - Select2
   
-### Cara penggunaan lewat ZIP
+## Cara penggunaan lewat ZIP pada Github
 
-Pastikan sudah terinstall Visual studio code, Xampp, dan PHP versi 8
+Pastikan sudah terinstall Visual studio code, XAMPP, dan PHP versi 8
 
-Jika dari github : 
+Jika dari github menggunakan zip : 
 
-- Masuk ke repositori github
-- Pilih button `code`
+- Pilih button `code` yang berwarna hijau
 - Pada dropdown, pilih `download zip`
 - Setelah terdownload, extract file kedalam folder `htdocs` (sesuaikan dengan lokasi di device)
 - Setelah di extract, ubah nama folder `3. KonterCell-main` menjadi `KonterCell`
@@ -54,7 +53,7 @@ Jika dari github :
 - Pada form upload file, `import` file sql yaitu **db_konter_cell** yang ada pada hasil extract di `htdocs`
 - Scroll kebawah ada button import, klik `import`
 - Tunggu proses import file sql
-- Jika berhasil, maka akan ada beberapa tabel yang muncul pada **db_konter_cell**.
+- Jika berhasil, maka akan ada beberapa tabel yang muncul pada **db_konter_cell**
 - Buka visual studio code
 - Buka folder hasil ekstract di `htdocs`
 - Buka terminal yang ada pada visual studio code
@@ -62,7 +61,7 @@ Jika dari github :
 - Tunggu hingga selesai
 - Jika muncul `node_modules` maka library berhasil dan website siap digunakan.
 
-### Kegunaan Folder
+## Kegunaan Folder
 - Folder public
   Menaruh file yang berkaitan styling/user interface seperti css dan javascript. beserta, resouce foto/gambar.
 - Folder controllers
@@ -70,5 +69,5 @@ Jika dari github :
 - Folder views
   Folder yang digunakan untuk menampung file program yang berisikan desain antarmuka website. folder views untuk mempermudah pengelompokan desain antarmuka yang anda buat.
 
-### Tanggal upload
-4 Agustus 2022
+## Tanggal Selesai
+- 4 Agustus 2022
